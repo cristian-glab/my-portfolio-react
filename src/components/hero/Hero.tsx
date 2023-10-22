@@ -37,7 +37,6 @@ export default class Hero extends Component {
 			<div className="image">
 				<img src={MyPhoto} alt="profile" />
 			</div>
-			
 		</div>
 	  </section>
 	)

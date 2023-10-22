@@ -1,0 +1,29 @@
+.projects {
+	.title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		h1 {
+			font-size: 5.5vw;
+		}
+		button {
+			font-size: 18px;
+			height: 3rem;
+			padding: .5rem 0;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			border: none;
+			background-color: transparent;
+			color: var(--dt-text);
+			border-bottom: 1px solid var(--dt-decoration);
+			transition: all .3s;
+			cursor: pointer;
+			&:hover {
+				color: var(--dt-decoration);
+			}
+		}
+	}
+	.list {
+		padding: 3rem 0;
+	}
+}
