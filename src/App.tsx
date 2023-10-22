@@ -3,11 +3,13 @@ import React from 'react';
 import './App.scss';
 import './styles.scss';
 import Hero from './components/hero/Hero';
+import Technologies from './components/technologies/Technologies';
 
 function App() {
   return (
     <div className="App">
       <Hero/>
+      <Technologies/>
     </div>
   );
 }
