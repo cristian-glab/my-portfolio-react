@@ -7,6 +7,7 @@
 	.description {
 		width: 50%;
 		min-height: 22rem;
+		margin-bottom: 5rem;
 		h1 {
 			font-size: 6.5vw;
 			margin-bottom: 2rem;
@@ -19,6 +20,57 @@
 	.form {
 		width: 50%;
 		min-height: 22rem;
+		margin-bottom: 5rem;
+		form {
+			margin-left: 8vw;
+			input, textarea {
+				margin-bottom: 1.5rem;
+				font-size: 16px;
+				color: var(--dt-text);
+				padding: 0 1rem;
+				width: 100%;
+				background-color: transparent;
+				border: none;
+				border-bottom: 1px solid var(--dt-text);
+			}
+			input {			
+				height: 3rem;
+				&::placeholder {
+					text-transform: uppercase;
+					font-size: 16px;
+				}
+			}
+			textarea {
+				padding: .5rem 1rem;
+				font-size: 19px;
+				height: 8rem;
+				&::placeholder {
+					text-transform: uppercase;
+					font-size: 18px;
+				}
+			}
+			.form-submit {
+				display: flex;
+				justify-content: flex-end;
+				margin-bottom: 2rem;
+				button {
+					font-size: 18px;
+					padding: .8rem 0;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+					border: none;
+					background-color: transparent;
+					color: var(--dt-text);
+					border-bottom: 1px solid var(--dt-decoration);
+					transition: all .3s;
+					cursor: pointer;
+					&:hover {
+						color: var(--dt-decoration);
+					}
+				}
+			}
+			
+		}
 	}
 	.footer {
 		padding: 2rem 0;
@@ -35,8 +87,15 @@
 			display: flex;
 			justify-content: center;
 			width: auto;
-			img {
+			img:not(:last-child) {
 				margin-right: 1.5rem;
+			}
+			img {
+				transition: all .3s;
+				cursor: pointer;
+			}
+			img:hover {
+				color: var(--dt-decoration)
 			}
 		}
 	}
