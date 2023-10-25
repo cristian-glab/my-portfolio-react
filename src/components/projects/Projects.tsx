@@ -19,42 +19,126 @@ export default class Projects extends Component {
       </div>
       <div className="list">
         <div className="element">
-          <img src={eCommerce} alt="e-commerce page" />
+          <div className="image">
+            <div className="buttons">
+              <div className="row">
+                <button>
+                  View Project
+                </button>
+              </div>
+              <div className="row">
+                <button>
+                  View Code
+                </button>
+              </div>
+            </div>
+            <img src={eCommerce} alt="e-commerce page" />
+          </div>
           <h2>E-commerce Product Page</h2>
           <p>
             <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
           </p>
         </div>
         <div className="element">
-          <img src={multiStepForm} alt="multi step form page" />
+          <div className="image">
+            <div className="buttons">
+              <div className="row">
+                <button>
+                  View Project
+                </button>
+              </div>
+              <div className="row">
+                <button>
+                  View Code
+                </button>
+              </div>
+            </div>
+            <img src={multiStepForm} alt="multi step form page" />
+          </div>
           <h2>Multi Step Form</h2>
           <p>
             <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
           </p>
         </div>
         <div className="element">
-          <img src={newsHomepage} alt="news homepage" />
+          <div className="image">
+            <div className="buttons">
+              <div className="row">
+                <button>
+                  View Project
+                </button>
+              </div>
+              <div className="row">
+                <button>
+                  View Code
+                </button>
+              </div>
+            </div>
+            <img src={newsHomepage} alt="news homepage" />
+          </div>
           <h2>News Homepage</h2>
           <p>
             <span>HTML</span> <span>CSS</span> <span>VUE</span>
           </p>
         </div>
         <div className="element">
-          <img src={ipAdress} alt="ip address page" />
+          <div className="image">
+            <div className="buttons">
+              <div className="row">
+                <button>
+                  View Project
+                </button>
+              </div>
+              <div className="row">
+                <button>
+                  View Code
+                </button>
+              </div>
+            </div>
+            <img src={ipAdress} alt="ip address page" />
+          </div>
           <h2>IP Address Tracker</h2>
           <p>
             <span>HTML</span> <span>CSS</span> <span>REACT</span>
           </p>
         </div>
         <div className="element">
-          <img src={makeRemote} alt="make remote page" />
+          <div className="image">
+            <div className="buttons">
+              <div className="row">
+                <button>
+                  View Project
+                </button>
+              </div>
+              <div className="row">
+                <button>
+                  View Code
+                </button>
+              </div>
+            </div>
+            <img src={makeRemote} alt="make remote page" />
+          </div>
           <h2>Make Remote Work</h2>
           <p>
             <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
           </p>
         </div>
         <div className="element">
-          <img src={jobListing} alt="job listing page" />
+          <div className="image">
+            <div className="buttons">
+              <div className="row">
+                <button>
+                  View Project
+                </button>
+              </div>
+              <div className="row">
+                <button>
+                  View Code
+                </button>
+              </div>
+            </div>
+            <img src={jobListing} alt="job listing page" />
+          </div>
           <h2>Static Job Listings</h2>
           <p>
             <span>HTML</span> <span>CSS</span> <span>REACT</span>

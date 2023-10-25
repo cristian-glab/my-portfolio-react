@@ -32,9 +32,58 @@
 		.element {
 			width: 48%;
 			margin-bottom: 4rem;
-			img {
+			.image  {
 				width: 100%;
+				position: relative;
+				.buttons {
+					position: absolute;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					height: 100%;
+					transition: all .3s;
+					opacity: 0;
+					flex-wrap: wrap;
+					background-color: rgba($color: #000000, $alpha: .7);
+					.row {
+						width: 100%;
+						display: flex;
+						justify-content: center;
+						button {
+							font-size: 18px;
+							height: 3rem;
+							padding: .5rem 0;
+							letter-spacing: 2px;
+							text-transform: uppercase;
+							border: none;
+							background-color: transparent;
+							color: var(--dt-text);
+							border-bottom: 1px solid var(--dt-decoration);
+							transition: all .3s;
+							cursor: pointer;
+							&:hover {
+								color: var(--dt-decoration);
+							}
+						}
+						&:first-child {
+							margin-top: 8.5vw;
+						}
+						&:last-child {
+							margin-bottom: 8.5vw;
+						}
+					}
+					
+					&:hover {
+						opacity: 1
+					}
+				}
+				img {
+					width: 100%;
+					transition: all .3s;
+				}
 			}
+			
 			h2 {
 				margin: 1rem 0;
 				font-size: 2vw;
