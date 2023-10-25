@@ -1,82 +1,85 @@
 .hero {
-	position: relative;
-	padding-bottom: 5rem;
-	height: 52rem;
-	border-bottom: 1px solid var(--dt-text);
-	.navbar {
-		position: absolute;
-		padding: 3rem 0;
-		display: flex;
-		justify-content: space-between;
+	padding: 0 6vw 5rem 6vw;
+	.container {
+		border-bottom: 1px solid var(--dt-text);
+		height: 52rem;
+		position: relative;
 		width: 100%;
-		.nickname {
-			h3 {
-				font-size: 25px;
-			}
-		}
-		.social-media {
-			display: flex;
-			justify-content: center;
-			width: auto;
-			img {
-				margin-right: 1.5rem;
-			}
-		}
-	}
-
-	.me {
-		position: absolute;
-		display: flex;
-		width: 100%;
-		.present {
+		.navbar {
 			position: absolute;
-			top: 10rem;
+			padding: 3rem 0;
+			display: flex;
+			justify-content: space-between;
 			width: 100%;
-			h1 {
-				font-size: 6.5vw;
-				width: 70%;
-				margin-bottom: 3rem;
-				span {
-					text-decoration: underline;
-					text-decoration-color: var(--dt-decoration);
-					text-underline-position: from-font;
+			.nickname {
+				h3 {
+					font-size: 25px;
 				}
 			}
-			p {
-				width: 40%;
-				line-height: 2rem;
-				font-size: 18px;
-				margin-bottom: 5rem;
+			.social-media {
+				display: flex;
+				justify-content: center;
+				width: auto;
+				img {
+					margin-right: 1.5rem;
+				}
 			}
-			.contact-me {
-				position: relative;
-				button {
+		}
+		.me {
+			position: absolute;
+			display: flex;
+			width: 100%;
+			.present {
+				position: absolute;
+				top: 10rem;
+				width: 100%;
+				h1 {
+					font-size: 6.5vw;
+					width: 70%;
+					margin-bottom: 3rem;
+					span {
+						text-decoration: underline;
+						text-decoration-color: var(--dt-decoration);
+						text-underline-position: from-font;
+					}
+				}
+				p {
+					width: 40%;
+					line-height: 2rem;
 					font-size: 18px;
-					padding: .5rem 0;
-					letter-spacing: 2px;
-					text-transform: uppercase;
-					border: none;
-					background-color: transparent;
-					color: var(--dt-text);
-					border-bottom: 1px solid var(--dt-decoration);
-					transition: all .3s;
-					cursor: pointer;
-					&:hover {
-						color: var(--dt-decoration);
+					margin-bottom: 5rem;
+				}
+				.contact-me {
+					position: relative;
+					button {
+						font-size: 18px;
+						padding: .8rem 0;
+						letter-spacing: 2px;
+						text-transform: uppercase;
+						border: none;
+						background-color: transparent;
+						color: var(--dt-text);
+						border-bottom: 1px solid var(--dt-decoration);
+						transition: all .3s;
+						cursor: pointer;
+						&:hover {
+							color: var(--dt-decoration);
+						}
 					}
 				}
 			}
-		}
-		.image {
-			z-index: -1;
-			right: 0;
-			position: absolute;
-			display: flex;
-			justify-content: flex-end;
-
-			img {
-				width: 65%;
+			.image {
+				z-index: -1;
+				right: 0;
+				position: absolute;
+				display: flex;
+				justify-content: flex-end;
+	
+				img {
+					width: 65%;
+				}
 			}
 		}
 	}
+	
 }

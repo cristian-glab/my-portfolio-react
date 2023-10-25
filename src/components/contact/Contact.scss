@@ -1,0 +1,43 @@
+.contact {
+	width: 100%;
+	background-color: #242424;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 3rem 6vw 0 6vw;
+	.description {
+		width: 50%;
+		min-height: 22rem;
+		h1 {
+			font-size: 6.5vw;
+			margin-bottom: 2rem;
+		}
+		p {
+			font-size: 18px;
+			margin-right: 8vw;
+		}
+	}
+	.form {
+		width: 50%;
+		min-height: 22rem;
+	}
+	.footer {
+		padding: 2rem 0;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		border-top: 1px solid var(--dt-text);
+		.nickname {
+			h3 {
+				font-size: 25px;
+			}
+		}
+		.social-media {
+			display: flex;
+			justify-content: center;
+			width: auto;
+			img {
+				margin-right: 1.5rem;
+			}
+		}
+	}
+}
