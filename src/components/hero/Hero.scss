@@ -1,8 +1,7 @@
 .hero {
-	padding: 0 6vw 5rem 6vw;
+	padding: 0 6vw 6vw 6vw;
 	.container {
-		border-bottom: 1px solid var(--dt-text);
-		height: 52rem;
+		height: 45rem;
 		position: relative;
 		width: 100%;
 		.navbar {
@@ -34,6 +33,7 @@
 				top: 10rem;
 				width: 100%;
 				h1 {
+					text-shadow: 1px 1px 10px black;
 					font-size: 6.5vw;
 					width: 70%;
 					margin-bottom: 3rem;
@@ -44,6 +44,7 @@
 					}
 				}
 				p {
+					text-shadow: 1px 1px 10px black;
 					width: 40%;
 					line-height: 2rem;
 					font-size: 18px;
@@ -76,10 +77,40 @@
 				justify-content: flex-end;
 	
 				img {
-					width: 65%;
+					width: 70%;
+				}
+			}
+		}
+	}	
+}
+
+@media screen and (max-width: 1080px) {
+	.hero {
+		padding: 0 0 4vw 4vw;
+		.container {
+			height: 87vw;
+			.navbar {
+				padding: 1.5rem 0;
+			}
+			.me {
+				.present {
+					top: 6.5rem;
+					h1 {
+						font-size: 7.5vw;
+						width: 60vw;
+						margin-bottom: 4vw;
+					}
+					p {
+						width: 60vw;
+						line-height: 2rem;
+						font-size: 18px;
+						margin-bottom: 4vw;
+					}
+				}
+				.image {
+					width: 73vw;
 				}
 			}
 		}
 	}
-	
 }

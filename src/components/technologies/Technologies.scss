@@ -1,6 +1,7 @@
 .technologies {
-	padding: 3.5rem 6vw;
-	width: 100%;
+	border-top: 1px solid var(--dt-text);
+	margin: 4vw 6vw 0 6vw;
+	padding: 6vw 0;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -13,6 +14,33 @@
 		}
 		p {
 			font-size: 18px;
+		}
+	}
+}
+@media screen and (max-width: 1080px) {
+	.technologies {
+		margin: 6vw 4vw 0 4vw;
+		.element {
+			width: 50%;
+			h1 {
+				font-size: 5.5vw;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.technologies {
+		justify-content: center;
+		.element {
+			width: 100%;
+			h1 {
+				text-align: center;
+				font-size: 6.5vw;
+			}
+			p {
+				text-align: center;
+			}
 		}
 	}
 }
