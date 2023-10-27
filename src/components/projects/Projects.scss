@@ -33,7 +33,7 @@
 		.element {
 			width: 48%;
 			margin-bottom: 4rem;
-			.image  {
+			.image {
 				width: 100%;
 				position: relative;
 				.buttons {
@@ -91,10 +91,102 @@
 				text-transform: uppercase;
 			}
 			p {
-				font-size: 18px;
+				font-size: 1.5vw;
 				letter-spacing: .5px;
 				span:not(:last-child) {
 					margin-right: 1rem;
+				}
+			}
+			.mobile-buttons {
+				display: none;
+				margin-top: 1rem;
+				button {
+					font-size: 1.8vw;
+					height: 3rem;
+					padding: .5rem 0;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+					border: none;
+					background-color: transparent;
+					color: var(--dt-text);
+					border-bottom: 1px solid var(--dt-decoration);
+					transition: all .3s;
+					cursor: pointer;
+					&:hover {
+						color: var(--dt-decoration);
+					}
+					&:not(:last-child) {
+						margin-right: 3.5vw;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.projects {
+		padding: 0 5vw;
+		.title {
+			h1 {
+				font-size: 7.5vw;
+			}
+		}
+		.list {
+			.element {
+				.image {
+					.buttons {
+						display: none;
+					}
+				}
+				h2 {
+					font-size: 3.2vw;
+				}
+				p {
+					font-size: 2vw;
+					span:not(:last-child) {
+						margin-right: .7rem;
+					}
+				}
+				.mobile-buttons {
+					display: flex;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.projects {
+		.title {
+			h1 {
+				font-size: 9.5vw;
+			}
+		}
+		.list {
+			padding: 3rem 0 1.5rem 0;
+			.element {
+				margin-bottom: 3rem;
+				width: 100%;
+				h2 {
+					font-size: 6vw;
+				}
+				p {
+					font-size: 3.5vw;
+					span:not(:last-child) {
+						margin-right: .7rem;
+					}
+				}
+				.mobile-buttons {
+					display: flex;
+					button {
+						font-size: 16px;
+						height: 3rem;
+						padding: .5rem 0;
+						&:not(:last-child) {
+							margin-right: 5.5vw;
+						}
+					}
 				}
 			}
 		}

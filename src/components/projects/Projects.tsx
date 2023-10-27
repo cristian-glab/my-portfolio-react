@@ -38,6 +38,14 @@ export default class Projects extends Component {
           <p>
             <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
           </p>
+          <div className="mobile-buttons">
+            <button>
+              View Project
+            </button>
+            <button>
+              View Code
+            </button>
+          </div>
         </div>
         <div className="element">
           <div className="image">
@@ -59,6 +67,14 @@ export default class Projects extends Component {
           <p>
             <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
           </p>
+          <div className="mobile-buttons">
+            <button>
+              View Project
+            </button>
+            <button>
+              View Code
+            </button>
+          </div>
         </div>
         <div className="element">
           <div className="image">
@@ -80,6 +96,14 @@ export default class Projects extends Component {
           <p>
             <span>HTML</span> <span>CSS</span> <span>VUE</span>
           </p>
+          <div className="mobile-buttons">
+            <button>
+              View Project
+            </button>
+            <button>
+              View Code
+            </button>
+          </div>
         </div>
         <div className="element">
           <div className="image">
@@ -101,6 +125,14 @@ export default class Projects extends Component {
           <p>
             <span>HTML</span> <span>CSS</span> <span>REACT</span>
           </p>
+          <div className="mobile-buttons">
+            <button>
+              View Project
+            </button>
+            <button>
+              View Code
+            </button>
+          </div>
         </div>
         <div className="element">
           <div className="image">
@@ -122,6 +154,14 @@ export default class Projects extends Component {
           <p>
             <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
           </p>
+          <div className="mobile-buttons">
+            <button>
+              View Project
+            </button>
+            <button>
+              View Code
+            </button>
+          </div>
         </div>
         <div className="element">
           <div className="image">
@@ -143,6 +183,14 @@ export default class Projects extends Component {
           <p>
             <span>HTML</span> <span>CSS</span> <span>REACT</span>
           </p>
+          <div className="mobile-buttons">
+            <button>
+              View Project
+            </button>
+            <button>
+              View Code
+            </button>
+          </div>
         </div>
       </div>
 		</section>
