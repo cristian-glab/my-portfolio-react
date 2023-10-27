@@ -19,15 +19,15 @@ const Technologies: React.FC = () => {
       </div>
       <div className='element'>
         <h1>Angular</h1>
-        <p>1 Year Experience</p>
+        <p>2 Year Experience</p>
       </div>
       <div className='element'>
         <h1>React</h1>
-        <p>1 Years Experience</p>
+        <p>2 Year Experience</p>
       </div>
       <div className='element'>
-        <h1>Node</h1>
-        <p>3 Years Experience</p>
+        <h1>SQL</h1>
+        <p>4 Years Experience</p>
       </div>
     </section>
   );

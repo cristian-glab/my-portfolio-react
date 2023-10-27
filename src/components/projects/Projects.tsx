@@ -52,14 +52,18 @@ const Projects: React.FC = () =>  {
           <div className="image">
             <div className="buttons">
               <div className="row">
-                <button>
-                  View Project
-                </button>
+                <a href="https://sneakers-faykris.netlify.app/">
+                  <button>
+                    View Project
+                  </button>
+                </a>
               </div>
               <div className="row">
-                <button>
-                  View Code
-                </button>
+                <a href="https://github.com/faykris/ecommerce-product-page-main">
+                  <button>
+                    View Code
+                  </button>
+                </a>  
               </div>
             </div>
             <img src={eCommerce} alt="e-commerce page" />
@@ -69,26 +73,34 @@ const Projects: React.FC = () =>  {
             <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
           </p>
           <div className="mobile-buttons">
-            <button>
-              View Project
-            </button>
-            <button>
-              View Code
-            </button>
+            <a href='https://sneakers-faykris.netlify.app/'>
+              <button>
+                View Project
+              </button>
+            </a>
+            <a href="https://github.com/faykris/ecommerce-product-page-main">
+              <button>
+                View Code
+              </button>
+            </a>
           </div>
         </div>
         <div className="element">
           <div className="image">
             <div className="buttons">
               <div className="row">
-                <button>
-                  View Project
-                </button>
+                <a href="https://multi-step-form-faykris.netlify.app/">
+                  <button>
+                    View Project
+                  </button>
+                </a>
               </div>
               <div className="row">
-                <button>
-                  View Code
-                </button>
+                <a href="https://github.com/faykris/multi-step-form">
+                  <button>
+                    View Code
+                  </button>
+                </a>
               </div>
             </div>
             <img src={multiStepForm} alt="multi step form page" />
@@ -98,26 +110,34 @@ const Projects: React.FC = () =>  {
             <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
           </p>
           <div className="mobile-buttons">
-            <button>
-              View Project
-            </button>
-            <button>
-              View Code
-            </button>
+            <a href="https://multi-step-form-faykris.netlify.app/">
+              <button>
+                View Project
+              </button>
+            </a>
+            <a href="https://github.com/faykris/multi-step-form">
+              <button>
+                View Code
+              </button>
+            </a>
           </div>
         </div>
         <div className="element">
           <div className="image">
             <div className="buttons">
               <div className="row">
-                <button>
-                  View Project
-                </button>
+                <a href="https://news-homepage-faykris.netlify.app/#/">
+                  <button>
+                    View Project
+                  </button>
+                </a>
               </div>
               <div className="row">
-                <button>
-                  View Code
-                </button>
+                <a href="https://github.com/faykris/news-homepage">
+                  <button>
+                    View Code
+                  </button>
+                </a>
               </div>
             </div>
             <img src={newsHomepage} alt="news homepage" />
@@ -127,26 +147,34 @@ const Projects: React.FC = () =>  {
             <span>HTML</span> <span>CSS</span> <span>VUE</span>
           </p>
           <div className="mobile-buttons">
-            <button>
-              View Project
-            </button>
-            <button>
-              View Code
-            </button>
+            <a href="https://news-homepage-faykris.netlify.app/#/">
+              <button>
+                View Project
+              </button>
+            </a>
+            <a href="https://github.com/faykris/news-homepage">
+              <button>
+                View Code
+              </button>
+            </a>
           </div>
         </div>
         <div className="element">
           <div className="image">
             <div className="buttons">
               <div className="row">
-                <button>
-                  View Project
-                </button>
+                <a href="https://ip-address-tracker-master-nu.vercel.app/">
+                  <button>
+                    View Project
+                  </button>
+                </a>
               </div>
               <div className="row">
-                <button>
-                  View Code
-                </button>
+                <a href="https://github.com/faykris/ip-address-tracker-master">
+                  <button>
+                    View Code
+                  </button>
+                </a>
               </div>
             </div>
             <img src={ipAdress} alt="ip address page" />
@@ -156,26 +184,34 @@ const Projects: React.FC = () =>  {
             <span>HTML</span> <span>CSS</span> <span>REACT</span>
           </p>
           <div className="mobile-buttons">
-            <button>
-              View Project
-            </button>
-            <button>
-              View Code
-            </button>
+            <a href="https://ip-address-tracker-master-nu.vercel.app/">
+              <button>
+                View Project
+              </button>
+            </a>
+            <a href="https://github.com/faykris/ip-address-tracker-master">
+              <button>
+                View Code
+              </button>
+            </a>
           </div>
         </div>
         <div className="element">
           <div className="image">
             <div className="buttons">
               <div className="row">
-                <button>
-                  View Project
-                </button>
+                <a href="https://snap-faykris.netlify.app/home">
+                  <button>
+                    View Project
+                  </button>
+                </a>
               </div>
               <div className="row">
+                <a href="https://github.com/faykris/make-remote-work">
                 <button>
                   View Code
                 </button>
+                </a>
               </div>
             </div>
             <img src={makeRemote} alt="make remote page" />
@@ -185,26 +221,34 @@ const Projects: React.FC = () =>  {
             <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
           </p>
           <div className="mobile-buttons">
-            <button>
-              View Project
-            </button>
-            <button>
-              View Code
-            </button>
+            <a href="https://snap-faykris.netlify.app/home">
+              <button>
+                View Project
+              </button>
+            </a>
+            <a href="https://github.com/faykris/make-remote-work">
+              <button>
+                View Code
+              </button>
+            </a>
           </div>
         </div>
         <div className="element">
           <div className="image">
             <div className="buttons">
               <div className="row">
-                <button>
-                  View Project
-                </button>
+                <a href="https://static-job-listings-master-ruby.vercel.app/">
+                  <button>
+                    View Project
+                  </button>
+                </a>
               </div>
               <div className="row">
-                <button>
-                  View Code
-                </button>
+                <a href="https://github.com/faykris/static-job-listings-master">
+                  <button>
+                    View Code
+                  </button>
+                </a>
               </div>
             </div>
             <img src={jobListing} alt="job listing page" />
@@ -214,12 +258,16 @@ const Projects: React.FC = () =>  {
             <span>HTML</span> <span>CSS</span> <span>REACT</span>
           </p>
           <div className="mobile-buttons">
-            <button>
-              View Project
-            </button>
-            <button>
-              View Code
-            </button>
+            <a href="https://static-job-listings-master-ruby.vercel.app/">
+              <button>
+                View Project
+              </button>
+            </a>
+            <a href="https://github.com/faykris/static-job-listings-master">
+              <button>
+                View Code
+              </button>
+            </a>
           </div>
         </div>
       </div>
