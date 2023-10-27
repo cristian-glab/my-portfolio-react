@@ -114,3 +114,55 @@
 		}
 	}
 }
+
+@media screen and (max-width: 680px) {
+	.hero {
+		padding: 0 4vw;
+		.container {
+			height: 190vw;
+			min-height: 50rem;
+			.navbar {
+				flex-wrap: wrap;
+				padding: 0;
+				.nickname{
+					width: 100%;
+					text-align: center;
+					margin: 2rem 0 3rem 0;
+					h3 {
+						font-size: 35px;
+					}
+				}
+				.social-media {
+					width: 100%;
+					margin-bottom: 3.5rem;
+					img:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			.me {
+				margin-top: 7rem;
+				.present {
+					top: 100vw;
+					text-align: center;
+					h1 {
+						width: 100%;
+						font-size: 9.5vw;
+					}
+					p {
+						width: 100%;
+						font-size: 4vw;
+					}
+				}
+				.image {
+					width: 100%;
+					justify-content: center;
+					img {
+						width: 60%;
+					}
+				}
+			}
+			
+		}
+	}
+}

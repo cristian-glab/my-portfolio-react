@@ -6,7 +6,7 @@ import Technologies from './components/technologies/Technologies';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Hero/>

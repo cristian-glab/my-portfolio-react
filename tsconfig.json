@@ -4,8 +4,10 @@
     "lib": [
       "dom",
       "dom.iterable",
+      "es2015",
       "esnext"
     ],
+    "types": ["jquery"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

@@ -1,21 +1,51 @@
-import React, { Component } from 'react'
+import React, { useRef, useEffect } from 'react';
+import $ from "jquery";
 import './Projects.scss'
-import eCommerce from '../../images/projects/e-commerce-page.png'
-import ipAdress from '../../images/projects/ip-address-tracker-page.png'
-import jobListing from '../../images/projects/job-listing-page.png'
-import makeRemote from '../../images/projects/make-remote-page.png'
-import multiStepForm from '../../images/projects/multi-step-form-page.png'
-import newsHomepage from '../../images/projects/news-homepage-page.png'
+import eCommerce from '../../images/projects/e-commerce-page.png';
+import ipAdress from '../../images/projects/ip-address-tracker-page.png';
+import jobListing from '../../images/projects/job-listing-page.png';
+import makeRemote from '../../images/projects/make-remote-page.png';
+import multiStepForm from '../../images/projects/multi-step-form-page.png';
+import newsHomepage from '../../images/projects/news-homepage-page.png';
 
-export default class Projects extends Component {
-  render() {
-	return (
-	  <section className='projects'>
-		  <div className="title">
+
+const Projects: React.FC = () =>  {
+  const scrollButtonRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+
+    const handleButtonClick = () => {
+      if (scrollButtonRef.current) {
+        $("html, body").animate(
+          {
+            scrollTop: $("#contact").offset()?.top,
+          },
+          1000
+        ); 
+      }
+    };
+
+    let buttonRef = scrollButtonRef.current;
+
+    if (buttonRef) {
+      $(buttonRef).on("click", handleButtonClick);
+    }
+
+    return () => {
+      if (buttonRef) {
+        $(buttonRef).off("click", handleButtonClick);
+      }
+    };
+  }, []);
+
+
+  return (
+    <section className='projects'>
+      <div className="title">
         <h1>Projects</h1>
-        <button>
-					Contact me
-				</button>
+        <button ref={scrollButtonRef}>
+          Contact me
+        </button>  
       </div>
       <div className="list">
         <div className="element">
@@ -193,7 +223,9 @@ export default class Projects extends Component {
           </div>
         </div>
       </div>
-		</section>
-	)
-  }
+    </section>
+  );
+  
 }
+
+export default Projects;

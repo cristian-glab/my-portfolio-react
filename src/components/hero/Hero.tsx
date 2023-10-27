@@ -1,15 +1,43 @@
-import React, { Component } from 'react'
-import './Hero.scss'
-import FrontendMentor from '../../images/Frontendmentor.svg'
-import Github from '../../images/Github.svg'
-import LinkedIn from '../../images/LinkedIn.svg'
-import Twitter from '../../images/Twitter.svg'
-import MyPhoto from '../../images/my-photo.png'
+import React, { useRef, useEffect } from 'react';
+import $ from "jquery";
+import './Hero.scss';
+import FrontendMentor from '../../images/Frontendmentor.svg';
+import Github from '../../images/Github.svg';
+import LinkedIn from '../../images/LinkedIn.svg';
+import Twitter from '../../images/Twitter.svg';
+import MyPhoto from '../../images/my-photo.png';
 
-export default class Hero extends Component {
-  render() {
+const Hero: React.FC = () => {
+  const scrollButtonRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+
+    const handleButtonClick = () => {
+      if (scrollButtonRef.current) {
+        $("html, body").animate(
+          {
+            scrollTop: $("#contact").offset()?.top,
+          },
+          1000
+        ); 
+      }
+    };
+
+    let buttonRef = scrollButtonRef.current;
+
+    if (buttonRef) {
+      $(buttonRef).on("click", handleButtonClick);
+    }
+
+    return () => {
+      if (buttonRef) {
+        $(buttonRef).off("click", handleButtonClick);
+      }
+    };
+  }, []);
+
 	return (
-	  <section className='hero'>
+		<section className='hero'>
 		<div className="container">
 			<div className="navbar">
 				<div className="nickname">
@@ -30,17 +58,19 @@ export default class Hero extends Component {
 						building accessible web apps that users love.
 					</p>
 					<div className="contact-me">
-					<button>
-						Contact me
-					</button>
-				</div>
+            <button ref={scrollButtonRef}>
+              Contact me
+            </button>
+					</div>
 				</div>
 				<div className="image">
 					<img src={MyPhoto} alt="profile" />
 				</div>
 			</div>
 		</div>	
-	  </section>
-	)
-  }
+		</section>
+	);
+  
 }
+
+export default Hero;

@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import './Technologies.scss'
+import React from 'react';
+import './Technologies.scss';
 
-export default class Technologies extends Component {
-  render() {
-	return (
-	  <section className='technologies'>
-		  <div className='element'>
+const Technologies: React.FC = () => {
+
+  return (
+    <section className='technologies'>
+      <div className='element'>
         <h1>HTML</h1>
         <p>4 Years Experience</p>
       </div>
@@ -15,21 +15,23 @@ export default class Technologies extends Component {
       </div>
       <div className='element'>
         <h1>Javascript</h1>
-        <p>4 Years Experience</p>
+        <p>3 Years Experience</p>
       </div>
       <div className='element'>
-        <h1>Accessibility</h1>
-        <p>4 Years Experience</p>
+        <h1>Angular</h1>
+        <p>1 Year Experience</p>
       </div>
       <div className='element'>
         <h1>React</h1>
-        <p>3 Years Experience</p>
+        <p>1 Years Experience</p>
       </div>
       <div className='element'>
-        <h1>Sass</h1>
+        <h1>Node</h1>
         <p>3 Years Experience</p>
       </div>
-		</section>
-	)
-  }
+    </section>
+  );
+  
 }
+
+export default Technologies;

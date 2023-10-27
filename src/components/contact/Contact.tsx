@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className='contact'>
+    <section className='contact' id="contact">
       <div className="description">
         <h1>Contact</h1>
         <p>
