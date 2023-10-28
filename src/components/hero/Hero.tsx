@@ -2,9 +2,13 @@ import React, { useRef, useEffect } from 'react';
 import $ from "jquery";
 import './Hero.scss';
 import FrontendMentor from '../../images/Frontendmentor.svg';
+import FrontendMentorGreen from '../../images/FrontendmentorGreen.svg';
 import Github from '../../images/Github.svg';
+import GithubGreen from '../../images/GithubGreen.svg';
 import LinkedIn from '../../images/LinkedIn.svg';
+import LinkedInGreen from '../../images/LinkedInGreen.svg';
 import Twitter from '../../images/Twitter.svg';
+import TwitterGreen from '../../images/TwitterGreen.svg';
 import MyPhoto from '../../images/my-photo.png';
 
 const Hero: React.FC = () => {
@@ -44,10 +48,22 @@ const Hero: React.FC = () => {
 					<h3>faykris</h3>
 				</div>
 				<div className="social-media">
-					<img src={Github} alt="Github logo" />
-					<img src={FrontendMentor} alt="Frontend Mentor logo" />
-					<img src={LinkedIn} alt="LinkedIn logo" />
-					<img src={Twitter} alt="Twitter logo" />
+          <a href="https://github.com/faykris">
+            <img src={Github} alt="Github logo" />
+            <img src={GithubGreen} alt="Github logo" />
+          </a>
+          <a href="https://www.frontendmentor.io/profile/faykris">
+            <img src={FrontendMentor} alt="Frontend Mentor logo" />
+            <img src={FrontendMentorGreen} alt="Frontend Mentor logo" />
+          </a>
+          <a href="https://www.linkedin.com/in/cristian-pinzon28/">
+            <img src={LinkedIn} alt="LinkedIn logo" />
+            <img src={LinkedInGreen} alt="LinkedIn logo" />
+          </a>
+					<a href="https://twitter.com/faykris">
+            <img src={Twitter} alt="Twitter logo" />
+            <img src={TwitterGreen} alt="Twitter logo" />
+          </a>
 				</div>
 			</div>
 			<div className="me">

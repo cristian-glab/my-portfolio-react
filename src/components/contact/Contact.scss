@@ -80,23 +80,46 @@
 		border-top: 1px solid var(--dt-text);
 		.nickname {
 			h3 {
-				font-size: 25px;
+				font-size: 35px;
 			}
 		}
 		.social-media {
 			display: flex;
 			justify-content: center;
 			width: auto;
-			img:not(:last-child) {
-				margin-right: 1.5rem;
-			}
-			img {
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				transition: all .3s;
-				cursor: pointer;
+				
+				img {
+					transition: all .3s;
+					cursor: pointer;
+				}
+				img:hover {
+					color: var(--dt-decoration)
+				}
+				img:first-child {
+					transition: all .3s;
+				}
+				img:nth-child(2) {
+					display: none;
+					transition: all .3s;
+				}
+				&:not(:last-child) {
+					margin-right: 1.5rem;
+				}
+				&:hover {
+					img:first-child {
+						display: none;
+					}
+					img:nth-child(2) {
+						display: inline;
+					}
+				}
 			}
-			img:hover {
-				color: var(--dt-decoration)
-			}
+			
 		}
 	}
 }
@@ -156,6 +179,12 @@
 			.social-media {
 				width: 100%;
 				margin-bottom: 3.5rem;
+				a:not(:last-child) {
+					margin-right: 1.5rem;
+				}
+				a:last-child {
+					margin-right: 0;
+				}
 			}
 		}
 	}

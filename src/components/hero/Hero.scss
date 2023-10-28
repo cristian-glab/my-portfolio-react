@@ -12,16 +12,35 @@
 			width: 100%;
 			.nickname {
 				h3 {
-					font-size: 25px;
+					font-size: 35px;
 				}
 			}
 			.social-media {
 				display: flex;
 				justify-content: center;
 				width: auto;
-				img {
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
 					margin-right: 1.5rem;
-				}
+					transition: all .3s;
+					img:first-child {
+						transition: all .3s;
+					}
+					img:nth-child(2) {
+						display: none;
+						transition: all .3s;
+					}
+					&:hover {
+						img:first-child {
+							display: none;
+						}
+						img:nth-child(2) {
+							display: inline;
+						}
+					}
+				}	
 			}
 		}
 		.me {
@@ -135,9 +154,13 @@
 				.social-media {
 					width: 100%;
 					margin-bottom: 3.5rem;
-					img:last-child {
+					a:not(:last-child) {
+						margin-right: 1.5rem;
+					}
+					a:last-child {
 						margin-right: 0;
 					}
+
 				}
 			}
 			.me {
