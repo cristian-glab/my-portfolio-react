@@ -11,6 +11,7 @@ import LinkedIn from '../../images/LinkedIn.svg'
 import LinkedInGreen from '../../images/LinkedInGreen.svg'
 import Twitter from '../../images/Twitter.svg'
 import TwitterGreen from '../../images/TwitterGreen.svg'
+import Rings from '../../images/rings.svg'
 
 interface contactState {
   name: string;
@@ -70,6 +71,7 @@ const Contact: React.FC = () => {
 
   return (
     <section className='contact' id="contact">
+      <img className="rings" src={Rings} alt="Rings" />
       <div className="description">
         <h1>Contact</h1>
         <p>

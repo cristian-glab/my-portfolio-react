@@ -1,5 +1,11 @@
 .hero {
 	padding: 0 6vw 6vw 6vw;
+	position: relative;
+	.rings {
+		position: absolute;
+		top: 7rem;
+		left: -7rem;
+	}
 	.container {
 		height: 45rem;
 		position: relative;
@@ -106,6 +112,10 @@
 @media screen and (max-width: 1080px) {
 	.hero {
 		padding: 0 0 4vw 4vw;
+		.rings {
+			top: 5rem;
+			left: -12rem;
+		}
 		.container {
 			height: 87vw;
 			.navbar {
@@ -137,6 +147,11 @@
 @media screen and (max-width: 680px) {
 	.hero {
 		padding: 0 4vw;
+		.rings {
+			top: 10rem;
+			left: -14rem;
+			z-index: -1;
+		}
 		.container {
 			height: 190vw;
 			min-height: 52rem;

@@ -5,6 +5,14 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	position: relative;
+	.rings {
+		position: absolute;
+		top: 17rem;
+		right: -17rem;
+		transform: rotate(180deg);
+		display: inline-flex;
+	}
 	.element {
 		width: 30%;
 		margin-bottom: 2.5rem;
@@ -20,6 +28,10 @@
 @media screen and (max-width: 1080px) {
 	.technologies {
 		margin: 6vw 4vw 0 4vw;
+		.rings {
+			top: 23rem;
+			right: -15rem;
+		}
 		.element {
 			width: 50%;
 			h1 {
@@ -32,6 +44,10 @@
 @media screen and (max-width: 680px) {
 	.technologies {
 		justify-content: center;
+		.rings {
+			top: 38rem;
+			right: -15rem;
+		}
 		.element {
 			width: 100%;
 			h1 {
