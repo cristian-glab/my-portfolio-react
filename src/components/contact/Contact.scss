@@ -67,6 +67,10 @@
 					&:hover {
 						color: var(--dt-decoration);
 					}
+					&:disabled {
+						opacity: .8;
+						color: var(--dt-decoration);
+					}
 				}
 			}
 			

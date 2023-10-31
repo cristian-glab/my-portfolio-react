@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import emailjs from 'emailjs-com';
+import className from 'classnames';
+import Modal from 'react-modal';
 import './Contact.scss'
 import FrontendMentor from '../../images/Frontendmentor.svg'
 import FrontendMentorGreen from '../../images/FrontendmentorGreen.svg'
@@ -15,12 +18,18 @@ interface contactState {
   message: string;
 }
 
+Modal.setAppElement('#root');
+
 const Contact: React.FC = () => {
   const [contact, setContact] = useState<contactState>({
     name: '',
     email: '',
     message: '',
   });
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [modalContent, setModalContent] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -29,8 +38,34 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí puedes manejar los datos del formulario, por ejemplo, enviarlos a un servidor
-    console.log(contact);
+    
+    setIsLoading(true);
+
+    const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID || '';
+    const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || '';
+    const userID = process.env.REACT_APP_EMAILJS_USER_ID || '';
+    const templateParams = {
+      from_name: contact.name,
+      to_name: process.env.REACT_APP_EMAILJS_USER_NAME || '',
+      message: contact.message,
+      reply_to: contact.email
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, userID)
+      .then((response) => {
+        console.log(response);
+        setIsSuccess(true);
+        setModalContent('Email sent successfully!');
+        
+      })
+      .catch((error) => {
+        setIsSuccess(false);
+        setModalContent(`Email failed to send: ${error}`);
+      })
+      .finally(() => {
+        setIsModalOpen(true);
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -74,7 +109,9 @@ const Contact: React.FC = () => {
             />
           </div>
           <div className="form-submit">
-            <button type="submit">Send Message</button>
+            <button type="submit" disabled={isLoading}>
+              {isLoading ? 'Sending...' : 'Send Message'}
+            </button>
           </div>  
         </form>
       </div>
@@ -101,6 +138,17 @@ const Contact: React.FC = () => {
           </a>
         </div>
       </div>
+      <Modal
+        overlayClassName="ModalOverlay"
+        className={
+          className(isSuccess ? 'Modal modal-success': 'Modal modal-error')
+        } isOpen={isModalOpen}
+        onRequestClose={() => setIsModalOpen(false)}
+      >
+        <h2>Message</h2>
+        <p>{modalContent}</p>
+        <button onClick={() => setIsModalOpen(false)}>Close</button>
+      </Modal>
     </section>
   );
 
