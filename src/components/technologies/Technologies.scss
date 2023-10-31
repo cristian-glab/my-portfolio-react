@@ -9,8 +9,7 @@
 	.rings {
 		position: absolute;
 		top: 17rem;
-		right: -17rem;
-		transform: rotate(180deg);
+		right: -6vw;
 		display: inline-flex;
 	}
 	.element {
@@ -30,7 +29,7 @@
 		margin: 6vw 4vw 0 4vw;
 		.rings {
 			top: 23rem;
-			right: -15rem;
+			right: -2rem;
 		}
 		.element {
 			width: 50%;
@@ -46,7 +45,7 @@
 		justify-content: center;
 		.rings {
 			top: 38rem;
-			right: -15rem;
+			right: -1rem;
 		}
 		.element {
 			width: 100%;

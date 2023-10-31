@@ -1,12 +1,12 @@
 import React from 'react';
 import './Technologies.scss';
-import Rings from '../../images/rings.svg'
+import RingsRight from '../../images/rings-right.svg'
 
 const Technologies: React.FC = () => {
 
   return (
     <section className='technologies'>
-      <img className="rings" src={Rings} alt="Rings" />
+      <img className="rings" src={RingsRight} alt="Rings" />
       <div className='element'>
         <h1>HTML</h1>
         <p>4 Years Experience</p>
