@@ -16,20 +16,32 @@ const Technologies: React.FC = () => {
         <p>4 Years Experience</p>
       </div>
       <div className='element'>
-        <h1>Javascript</h1>
-        <p>3 Years Experience</p>
+        <h1>Node</h1>
+        <p>4 Years Experience</p>
       </div>
       <div className='element'>
         <h1>Angular</h1>
-        <p>2 Year Experience</p>
+        <p>2 Years Experience</p>
       </div>
       <div className='element'>
         <h1>React</h1>
-        <p>2 Year Experience</p>
+        <p>2 Years Experience</p>
       </div>
       <div className='element'>
         <h1>SQL</h1>
-        <p>4 Years Experience</p>
+        <p>5 Years Experience</p>
+      </div>
+      <div className='element'>
+        <h1>NO SQL</h1>
+        <p>1 Year Experience</p>
+      </div>
+      <div className='element'>
+        <h1>Flutter</h1>
+        <p>6 Months Experience</p>
+      </div>
+      <div className='element'>
+        <h1>SCRUM</h1>
+        <p>3 Years Experience</p>
       </div>
     </section>
   );
