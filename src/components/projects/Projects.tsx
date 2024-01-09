@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { CSSTransition } from 'react-transition-group';
+// import { CSSTransition } from 'react-transition-group';
 import 'react-tabs/style/react-tabs.css';
 import $ from "jquery";
 import './Projects.scss'
@@ -83,14 +83,14 @@ const Projects: React.FC = () =>  {
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
-                      <a href="https://weather-monitoring-front.netlify.app/" target="_blank">
+                      <a href="https://weather-monitoring-front.netlify.app/" target="_blank" rel="noreferrer">
                         <button>
                           View Project
                         </button>
                       </a>
                     </div>
                     <div className="row">
-                      <a href="https://github.com/faykris/weather-monitoring-front" target="_blank">
+                      <a href="https://github.com/faykris/weather-monitoring-front" target="_blank" rel="noreferrer">
                         <button>
                           View Code
                         </button>
@@ -104,12 +104,12 @@ const Projects: React.FC = () =>  {
                   <span>HTML</span> <span>CSS</span> <span>ANGULAR</span> <span>SOCKET</span>
                 </p>
                 <div className="mobile-buttons">
-                  <a href='https://weather-monitoring-front.netlify.app/' target="_blank">
+                  <a href='https://weather-monitoring-front.netlify.app/' target="_blank" rel="noreferrer">
                     <button>
                       View Project
                     </button>
                   </a>
-                  <a href="https://github.com/faykris/weather-monitoring-front" target="_blank">
+                  <a href="https://github.com/faykris/weather-monitoring-front" target="_blank" rel="noreferrer">
                     <button>
                       View Code
                     </button>
@@ -120,14 +120,14 @@ const Projects: React.FC = () =>  {
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
-                      <a href="https://sneakers-faykris.netlify.app/" target="_blank">
+                      <a href="https://sneakers-faykris.netlify.app/" target="_blank" rel="noreferrer">
                         <button>
                           View Project
                         </button>
                       </a>
                     </div>
                     <div className="row">
-                      <a href="https://github.com/faykris/ecommerce-product-page-main" target="_blank">
+                      <a href="https://github.com/faykris/ecommerce-product-page-main" target="_blank" rel="noreferrer">
                         <button>
                           View Code
                         </button>
@@ -141,12 +141,12 @@ const Projects: React.FC = () =>  {
                   <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
                 </p>
                 <div className="mobile-buttons">
-                  <a href='https://sneakers-faykris.netlify.app/' target="_blank">
+                  <a href='https://sneakers-faykris.netlify.app/' target="_blank" rel="noreferrer">
                     <button>
                       View Project
                     </button>
                   </a>
-                  <a href="https://github.com/faykris/ecommerce-product-page-main" target="_blank">
+                  <a href="https://github.com/faykris/ecommerce-product-page-main" target="_blank" rel="noreferrer">
                     <button>
                       View Code
                     </button>
@@ -157,14 +157,14 @@ const Projects: React.FC = () =>  {
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
-                      <a href="https://multi-step-form-faykris.netlify.app/" target="_blank">
+                      <a href="https://multi-step-form-faykris.netlify.app/" target="_blank" rel="noreferrer">
                         <button>
                           View Project
                         </button>
                       </a>
                     </div>
                     <div className="row">
-                      <a href="https://github.com/faykris/multi-step-form" target="_blank">
+                      <a href="https://github.com/faykris/multi-step-form" target="_blank" rel="noreferrer">
                         <button>
                           View Code
                         </button>
@@ -178,12 +178,12 @@ const Projects: React.FC = () =>  {
                   <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
                 </p>
                 <div className="mobile-buttons">
-                  <a href="https://multi-step-form-faykris.netlify.app/" target="_blank">
+                  <a href="https://multi-step-form-faykris.netlify.app/" target="_blank" rel="noreferrer">
                     <button>
                       View Project
                     </button>
                   </a>
-                  <a href="https://github.com/faykris/multi-step-form" target="_blank">
+                  <a href="https://github.com/faykris/multi-step-form" target="_blank" rel="noreferrer">
                     <button>
                       View Code
                     </button>
@@ -194,14 +194,14 @@ const Projects: React.FC = () =>  {
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
-                      <a href="https://news-homepage-faykris.netlify.app/#/" target="_blank">
+                      <a href="https://news-homepage-faykris.netlify.app/#/" target="_blank" rel="noreferrer">
                         <button>
                           View Project
                         </button>
                       </a>
                     </div>
                     <div className="row">
-                      <a href="https://github.com/faykris/news-homepage" target="_blank">
+                      <a href="https://github.com/faykris/news-homepage" target="_blank" rel="noreferrer">
                         <button>
                           View Code
                         </button>
@@ -215,12 +215,12 @@ const Projects: React.FC = () =>  {
                   <span>HTML</span> <span>CSS</span> <span>VUE</span>
                 </p>
                 <div className="mobile-buttons">
-                  <a href="https://news-homepage-faykris.netlify.app/#/" target="_blank">
+                  <a href="https://news-homepage-faykris.netlify.app/#/" target="_blank" rel="noreferrer">
                     <button>
                       View Project
                     </button>
                   </a>
-                  <a href="https://github.com/faykris/news-homepage" target="_blank">
+                  <a href="https://github.com/faykris/news-homepage" target="_blank" rel="noreferrer">
                     <button>
                       View Code
                     </button>
@@ -231,14 +231,14 @@ const Projects: React.FC = () =>  {
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
-                      <a href="https://ip-address-tracker-master-nu.vercel.app/" target="_blank">
+                      <a href="https://ip-address-tracker-master-nu.vercel.app/" target="_blank" rel="noreferrer">
                         <button>
                           View Project
                         </button>
                       </a>
                     </div>
                     <div className="row">
-                      <a href="https://github.com/faykris/ip-address-tracker-master" target="_blank">
+                      <a href="https://github.com/faykris/ip-address-tracker-master" target="_blank" rel="noreferrer">
                         <button>
                           View Code
                         </button>
@@ -252,12 +252,12 @@ const Projects: React.FC = () =>  {
                   <span>HTML</span> <span>CSS</span> <span>REACT</span>
                 </p>
                 <div className="mobile-buttons">
-                  <a href="https://ip-address-tracker-master-nu.vercel.app/" target="_blank">
+                  <a href="https://ip-address-tracker-master-nu.vercel.app/" target="_blank" rel="noreferrer">
                     <button>
                       View Project
                     </button>
                   </a>
-                  <a href="https://github.com/faykris/ip-address-tracker-master" target="_blank">
+                  <a href="https://github.com/faykris/ip-address-tracker-master" target="_blank" rel="noreferrer">
                     <button>
                       View Code
                     </button>
@@ -268,14 +268,14 @@ const Projects: React.FC = () =>  {
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
-                      <a href="https://snap-faykris.netlify.app/home" target="_blank">
+                      <a href="https://snap-faykris.netlify.app/home" target="_blank" rel="noreferrer">
                         <button>
                           View Project
                         </button>
                       </a>
                     </div>
                     <div className="row">
-                      <a href="https://github.com/faykris/make-remote-work" target="_blank">
+                      <a href="https://github.com/faykris/make-remote-work" target="_blank" rel="noreferrer">
                       <button>
                         View Code
                       </button>
@@ -289,12 +289,12 @@ const Projects: React.FC = () =>  {
                   <span>HTML</span> <span>CSS</span> <span>ANGULAR</span>
                 </p>
                 <div className="mobile-buttons">
-                  <a href="https://snap-faykris.netlify.app/home" target="_blank">
+                  <a href="https://snap-faykris.netlify.app/home" target="_blank" rel="noreferrer">
                     <button>
                       View Project
                     </button>
                   </a>
-                  <a href="https://github.com/faykris/make-remote-work" target="_blank">
+                  <a href="https://github.com/faykris/make-remote-work" target="_blank" rel="noreferrer">
                     <button>
                       View Code
                     </button>
@@ -449,7 +449,7 @@ const Projects: React.FC = () =>  {
                     View Project
                   </button>
                 </a> */}
-                <a href="https://github.com/faykris/founder_scout" target='_blank'>
+                <a href="https://github.com/faykris/founder_scout" target='_blank' rel="noreferrer">
                   <button>
                     View Code
                   </button>
@@ -474,7 +474,7 @@ const Projects: React.FC = () =>  {
                     </a>
                   </div> */}
                   <div className="row">
-                    <a href="https://github.com/faykris/CareTalk" target='_blank'>
+                    <a href="https://github.com/faykris/CareTalk" target='_blank' rel="noreferrer">
                       <button>
                         View Code
                       </button>
@@ -493,7 +493,7 @@ const Projects: React.FC = () =>  {
                     View Project
                   </button>
                 </a> */}
-                <a href="https://github.com/faykris/CareTalk" target='_blank'>
+                <a href="https://github.com/faykris/CareTalk" target='_blank' rel="noreferrer">
                   <button>
                     View Code
                   </button>
