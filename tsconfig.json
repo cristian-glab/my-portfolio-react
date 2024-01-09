@@ -7,7 +7,7 @@
       "es2015",
       "esnext"
     ],
-    "types": ["jquery"],
+    "types": ["jquery", "react-transition-group"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
