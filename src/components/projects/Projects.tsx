@@ -305,14 +305,14 @@ const Projects: React.FC = () =>  {
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
-                      <a href="https://static-job-listings-master-ruby.vercel.app/" target="_blank">
+                      <a href="https://static-job-listings-master-ruby.vercel.app/" target="_blank" rel="noreferrer">
                         <button>
                           View Project
                         </button>
                       </a>
                     </div>
                     <div className="row">
-                      <a href="https://github.com/faykris/static-job-listings-master" target="_blank">
+                      <a href="https://github.com/faykris/static-job-listings-master" target="_blank" rel="noreferrer">
                         <button>
                           View Code
                         </button>
@@ -326,12 +326,12 @@ const Projects: React.FC = () =>  {
                   <span>HTML</span> <span>CSS</span> <span>REACT</span>
                 </p>
                 <div className="mobile-buttons">
-                  <a href="https://static-job-listings-master-ruby.vercel.app/" target="_blank">
+                  <a href="https://static-job-listings-master-ruby.vercel.app/" target="_blank" rel="noreferrer">
                     <button>
                       View Project
                     </button>
                   </a>
-                  <a href="https://github.com/faykris/static-job-listings-master" target="_blank">
+                  <a href="https://github.com/faykris/static-job-listings-master" target="_blank" rel="noreferrer">
                     <button>
                       View Code
                     </button>
@@ -370,12 +370,12 @@ const Projects: React.FC = () =>  {
                 <span>NEST</span> <span>MONGODB</span> <span>CRONJOB</span>
               </p>
               <div className="mobile-buttons">
-                <a href='https://weather-monitoring-back.vercel.app/' target='_blank'>
+                <a href='https://weather-monitoring-back.vercel.app/' target='_blank' rel="noreferrer">
                   <button>
                     View Project
                   </button>
                 </a>
-                <a href="https://github.com/faykris/weather-monitoring-back" target='_blank'>
+                <a href="https://github.com/faykris/weather-monitoring-back" target='_blank' rel="noreferrer">
                   <button>
                     View Code
                   </button>
@@ -407,12 +407,12 @@ const Projects: React.FC = () =>  {
                 <span>NODE</span> <span>HAPI</span> <span>MYSQL</span> <span>KNEX</span>
               </p>
               <div className="mobile-buttons">
-                <a href='https://grenrun-sports.herokuapp.com/' target='_blank'>
+                <a href='https://grenrun-sports.herokuapp.com/' target='_blank' rel="noreferrer">
                   <button>
                     View Project
                   </button>
                 </a>
-                <a href="https://github.com/faykris/GreenRun-Sports" target='_blank'>
+                <a href="https://github.com/faykris/GreenRun-Sports" target='_blank' rel="noreferrer">
                   <button>
                     View Code
                   </button>
