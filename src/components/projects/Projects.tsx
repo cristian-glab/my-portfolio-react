@@ -67,15 +67,12 @@ const Projects: React.FC = () =>  {
           Contact me
         </button>  
       </div>
-
       <Tabs selectedIndex={selectedTabIndex} onSelect={(index) => setSelectedTabIndex(index)}>
         <TabList>
           <Tab>Frontend</Tab>
           <Tab>Backend</Tab>
           <Tab>Mobile</Tab>
         </TabList>
-
-    
         <TabPanel>
           <TabContent label="Websites using JavaScript frameworks" content={
             <div className="list">
@@ -341,7 +338,6 @@ const Projects: React.FC = () =>  {
             </div>
           } />
         </TabPanel>
-
         <TabPanel>
         <TabContent label="REST APIs, microservices and scrapers" content={
           <div className="list">
@@ -459,7 +455,6 @@ const Projects: React.FC = () =>  {
           </div>
           } />
         </TabPanel>
-
         <TabPanel>
           <TabContent label="Mobile Applications" content={
           <div className="list">
@@ -503,10 +498,7 @@ const Projects: React.FC = () =>  {
           </div>
           } />
         </TabPanel>
-
-      
-    </Tabs>
-      
+      </Tabs>
     </section>
   );
   
