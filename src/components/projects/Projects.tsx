@@ -15,6 +15,8 @@ import wmFrontend from '../../images/projects/wm-frontend.png';
 import greenrunApi from '../../images/projects/greenrun-api.png';
 import linkedInScraper from '../../images/projects/linkedin-scraper.png';
 import caretalk from '../../images/projects/caretalk-mobile.png';
+import mySocialMedia from '../../images/projects/my-social-media.jpeg';
+import currencyChatBot from '../../images/projects/currency-chatbot.jpeg';
 
 interface TabContentProps {
   label: string;
@@ -76,6 +78,80 @@ const Projects: React.FC = () =>  {
         <TabPanel>
           <TabContent label="Websites using JavaScript frameworks" content={
             <div className="list">
+              <div className="element">
+                <div className="image">
+                  <div className="buttons">
+                    <div className="row">
+                      <a href="https://main.d2bgzhtjb4yy1t.amplifyapp.com/" target="_blank" rel="noreferrer">
+                        <button>
+                          View Project
+                        </button>
+                      </a>
+                    </div>
+                    <div className="row">
+                      <a href="https://github.com/faykris/currency-converter-chat-front" target="_blank" rel="noreferrer">
+                        <button>
+                          View Code
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                  <img src={currencyChatBot} alt="Currency Chatbot" />
+                </div>
+                <h2>Currency ChatBot</h2>
+                <p>
+                  <span>HTML</span> <span>CSS</span> <span>REACT</span> <span>TYPESCRIPT</span> <span>JWT</span>
+                </p>
+                <div className="mobile-buttons">
+                  <a href='https://main.d2bgzhtjb4yy1t.amplifyapp.com/' target="_blank" rel="noreferrer">
+                    <button>
+                      View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/faykris/currency-converter-chat-front" target="_blank" rel="noreferrer">
+                    <button>
+                      View Code
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div className="element">
+                <div className="image">
+                  <div className="buttons">
+                    <div className="row">
+                      <a href="https://main.d1kpywnbqyxeuw.amplifyapp.com" target="_blank" rel="noreferrer">
+                        <button>
+                          View Project
+                        </button>
+                      </a>
+                    </div>
+                    <div className="row">
+                      <a href="https://github.com/faykris/my-social-media-front" target="_blank" rel="noreferrer">
+                        <button>
+                          View Code
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                  <img src={mySocialMedia} alt="My Social Media" />
+                </div>
+                <h2>My Social Media</h2>
+                <p>
+                  <span>HTML</span> <span>CSS</span> <span>REACT</span> <span>TYPESCRIPT</span> <span>JWT</span> <span>REDIS</span> <span>RABBITMQ</span>
+                </p>
+                <div className="mobile-buttons">
+                  <a href='https://main.d1kpywnbqyxeuw.amplifyapp.com' target="_blank" rel="noreferrer">
+                    <button>
+                      View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/faykris/my-social-media-front" target="_blank" rel="noreferrer">
+                    <button>
+                      View Code
+                    </button>
+                  </a>
+                </div>
+              </div>
               <div className="element">
                 <div className="image">
                   <div className="buttons">
