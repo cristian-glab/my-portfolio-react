@@ -137,7 +137,7 @@ const Projects: React.FC = () =>  {
                 </div>
                 <h2>My Social Media</h2>
                 <p>
-                  <span>HTML</span> <span>CSS</span> <span>REACT</span> <span>TYPESCRIPT</span> <span>JWT</span> <span>REDIS</span> <span>RABBITMQ</span>
+                  <span>HTML</span> <span>CSS</span> <span>REACT</span> <span>TYPESCRIPT</span> <span>TAILWIND</span> <span>JWT</span> <span>REDIS</span> <span>RABBITMQ</span>
                 </p>
                 <div className="mobile-buttons">
                   <a href='https://main.d1kpywnbqyxeuw.amplifyapp.com' target="_blank" rel="noreferrer">
