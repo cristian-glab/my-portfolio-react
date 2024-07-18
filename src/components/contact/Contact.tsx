@@ -9,8 +9,8 @@ import Github from '../../images/Github.svg'
 import GithubGreen from '../../images/GithubGreen.svg'
 import LinkedIn from '../../images/LinkedIn.svg'
 import LinkedInGreen from '../../images/LinkedInGreen.svg'
-import Twitter from '../../images/Twitter.svg'
-import TwitterGreen from '../../images/TwitterGreen.svg'
+import X from '../../images/x-social-media-black-icon.svg';
+import XGreen from '../../images/x-social-media-green-icon.svg';
 import Rings from '../../images/rings.svg'
 
 interface contactState {
@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
           Please fill in the form, and I'll get back to you as soon as possible.
         </p>
       </div>
-      <div className="form">
+      <div className="form movement">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <input
@@ -134,9 +134,9 @@ const Contact: React.FC = () => {
             <img src={LinkedIn} alt="LinkedIn logo" />
             <img src={LinkedInGreen} alt="LinkedIn logo" />
           </a>
-					<a href="https://twitter.com/faykris">
-            <img src={Twitter} alt="Twitter logo" />
-            <img src={TwitterGreen} alt="Twitter logo" />
+					<a href="https://x.com/faykris">
+            <img src={X} alt="X logo" />
+            <img src={XGreen} alt="X logo" />
           </a>
         </div>
       </div>

@@ -72,6 +72,7 @@
 					cursor: pointer;
 					&:hover {
 						color: var(--dt-decoration);
+						border-bottom: 1px solid var(--dt-text);
 					}
 					&:disabled {
 						opacity: .8;
@@ -108,7 +109,8 @@
 					cursor: pointer;
 				}
 				img:hover {
-					color: var(--dt-decoration)
+					color: var(--dt-decoration);
+					animation: appearing .3s ease-in-out 0s;
 				}
 				img:first-child {
 					transition: all .3s;

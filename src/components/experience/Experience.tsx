@@ -33,7 +33,7 @@ const Experience: React.FC = () => {
         as are administration, events payment, donations and
         subscription of volunteers.
       </p>
-      <div className="slider-container">
+      <div className="slider-container movement">
         <div className="slider">
           <div
             className="slides"
@@ -57,8 +57,16 @@ const Experience: React.FC = () => {
         </button>
       </div>
       <h3>
-        Company: <span>Gracia Lab</span>
+        Company: <span>G Lab</span>
       </h3>
+      <ul className="techs">
+        <li>Angular</li>
+        <li>Material</li>
+        <li>Nest</li>
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+        <li>Bootstrap</li>
+      </ul>
     </section>
   );
 }

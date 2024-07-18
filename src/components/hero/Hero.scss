@@ -2,9 +2,11 @@
 	padding: 0 6vw 6vw 6vw;
 	position: relative;
 	.rings {
+		opacity: 1;
 		position: absolute;
 		top: 7rem;
 		left: -7rem;
+		animation: toRight .7s ease-in-out 0s;
 	}
 	.container {
 		height: 45rem;
@@ -31,6 +33,7 @@
 					align-items: center;
 					margin-right: 1.5rem;
 					transition: all .3s;
+					
 					img:first-child {
 						transition: all .3s;
 					}
@@ -39,6 +42,7 @@
 						transition: all .3s;
 					}
 					&:hover {
+						animation: appearing .3s ease-in-out 0s;
 						img:first-child {
 							display: none;
 						}
@@ -58,6 +62,7 @@
 				top: 10rem;
 				width: 100%;
 				h1 {
+					animation: appearing 1s ease-in-out 0s;
 					text-shadow: 1px 1px 10px black;
 					font-size: 6.5vw;
 					width: 70%;
@@ -69,6 +74,7 @@
 					}
 				}
 				p {
+					animation: appearing 3s ease-in-out 0s;
 					text-shadow: 1px 1px 10px black;
 					width: 40%;
 					line-height: 2rem;
@@ -76,6 +82,7 @@
 					margin-bottom: 5rem;
 				}
 				.contact-me {
+					animation: appearing 4s ease-in-out 0s;
 					position: relative;
 					button {
 						font-size: 18px;
@@ -90,6 +97,8 @@
 						cursor: pointer;
 						&:hover {
 							color: var(--dt-decoration);
+							border-bottom: 1px solid var(--dt-text);
+							animation: selected .5s ease-in-out 0s initial backwards;
 						}
 					}
 				}
@@ -100,7 +109,7 @@
 				position: absolute;
 				display: flex;
 				justify-content: flex-end;
-	
+				animation: imageHero 1.5s ease-in-out 0s;
 				img {
 					width: 70%;
 				}
@@ -202,5 +211,52 @@
 			}
 			
 		}
+	}
+}
+
+@keyframes selected {
+	0% {
+		color: var(--dt-text);
+		border-bottom: 1px solid var(--dt-decoration);
+	}
+	100% {
+		color: var(--dt-decoration);
+		border-bottom: 1px solid  var(--dt-text);
+	}
+}
+
+@keyframes toRight {
+	0% {
+		opacity: 0;
+		left: -17rem;
+	}
+
+	100% {
+		opacity: 1;
+		left: -7rem;
+	}
+}
+
+@keyframes appearing {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes imageHero {
+	0% {
+		opacity: 0;
+		scale: 0;
+		transform: translateY(20rem);
+	}
+
+	100% {
+		opacity: 1;
+		scale: 100%;
+		transform: translateY(0);
 	}
 }

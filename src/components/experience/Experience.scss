@@ -120,6 +120,15 @@
   background-color: #4EE1A0;
 }
 
+.techs {
+  padding: .5rem 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-transform: uppercase;
+  list-style: none;
+  gap: .5rem;
+}
 
 @media screen and (max-width: 1080px) {
   .experience {
@@ -181,5 +190,9 @@
   .next::before,
   .next::after{
     width: 4vw;
+  }
+
+  .techs {
+    font-size: 3.5vw;
   }
 }

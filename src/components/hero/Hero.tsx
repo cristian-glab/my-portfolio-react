@@ -7,8 +7,8 @@ import Github from '../../images/Github.svg';
 import GithubGreen from '../../images/GithubGreen.svg';
 import LinkedIn from '../../images/LinkedIn.svg';
 import LinkedInGreen from '../../images/LinkedInGreen.svg';
-import Twitter from '../../images/Twitter.svg';
-import TwitterGreen from '../../images/TwitterGreen.svg';
+import X from '../../images/x-social-media-black-icon.svg';
+import XGreen from '../../images/x-social-media-green-icon.svg';
 import MyPhoto from '../../images/my-photo.png';
 import Rings from '../../images/rings.svg';
 
@@ -62,15 +62,15 @@ const Hero: React.FC = () => {
               <img src={LinkedIn} alt="LinkedIn logo" />
               <img src={LinkedInGreen} alt="LinkedIn logo" />
             </a>
-            <a href="https://twitter.com/faykris">
-              <img src={Twitter} alt="Twitter logo" />
-              <img src={TwitterGreen} alt="Twitter logo" />
+            <a href="https://x.com/faykris">
+              <img src={X} alt="Twitter logo" />
+              <img src={XGreen} alt="X logo" />
             </a>
           </div>
         </div>
         <div className="me">
           <div className="present">
-            <h1>Nice to meet you! I'm <span>Cristian Pinzón</span>.</h1>
+            <h1>Nice to meet you! I'm <span>Cristian Pinzón</span></h1>
             <p>
               Based in Colombia, I'm a full stack developer passionate about 
               building accessible web apps that users love.

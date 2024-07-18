@@ -78,7 +78,7 @@ const Projects: React.FC = () =>  {
         <TabPanel>
           <TabContent label="Websites using JavaScript frameworks" content={
             <div className="list">
-              <div className="element">
+              <div className="element movement">
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
@@ -115,7 +115,7 @@ const Projects: React.FC = () =>  {
                   </a>
                 </div>
               </div>
-              <div className="element">
+              <div className="element movement">
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
@@ -152,7 +152,7 @@ const Projects: React.FC = () =>  {
                   </a>
                 </div>
               </div>
-              <div className="element">
+              <div className="element movement">
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
@@ -189,7 +189,7 @@ const Projects: React.FC = () =>  {
                   </a>
                 </div>
               </div>
-              <div className="element">
+              <div className="element movement">
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
@@ -226,7 +226,7 @@ const Projects: React.FC = () =>  {
                   </a>
                 </div>
               </div>
-              <div className="element">
+              <div className="element movement">
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
@@ -263,7 +263,7 @@ const Projects: React.FC = () =>  {
                   </a>
                 </div>
               </div>
-              <div className="element">
+              <div className="element movement">
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
@@ -300,7 +300,7 @@ const Projects: React.FC = () =>  {
                   </a>
                 </div>
               </div>
-              <div className="element">
+              <div className="element movement">
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
@@ -337,7 +337,7 @@ const Projects: React.FC = () =>  {
                   </a>
                 </div>
               </div>
-              <div className="element">
+              <div className="element movement">
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
@@ -374,7 +374,7 @@ const Projects: React.FC = () =>  {
                   </a>
                 </div>
               </div>
-              <div className="element">
+              <div className="element movement">
                 <div className="image">
                   <div className="buttons">
                     <div className="row">
@@ -417,7 +417,7 @@ const Projects: React.FC = () =>  {
         <TabPanel>
         <TabContent label="REST APIs, microservices and scrapers" content={
           <div className="list">
-            <div className="element">
+            <div className="element movement">
               <div className="image">
                 <div className="buttons">
                   <div className="row">
@@ -454,7 +454,7 @@ const Projects: React.FC = () =>  {
                 </a>
               </div>
             </div>
-            <div className="element">
+            <div className="element movement">
               <div className="image">
                 <div className="buttons">
                   <div className="row">
@@ -491,7 +491,7 @@ const Projects: React.FC = () =>  {
                 </a>
               </div>
             </div>
-            <div className="element">
+            <div className="element movement">
               <div className="image">
                 <div className="buttons">
                   {/* <div className="row">
@@ -534,7 +534,7 @@ const Projects: React.FC = () =>  {
         <TabPanel>
           <TabContent label="Mobile Applications" content={
           <div className="list">
-            <div className="element">
+            <div className="element movement">
               <div className="image">
                 <div className="buttons">
                   {/* <div className="row">
