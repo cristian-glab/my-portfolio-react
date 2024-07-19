@@ -9,7 +9,7 @@ import LinkedIn from '../../images/LinkedIn.svg';
 import LinkedInGreen from '../../images/LinkedInGreen.svg';
 import X from '../../images/x-social-media-black-icon.svg';
 import XGreen from '../../images/x-social-media-green-icon.svg';
-import MyPhoto from '../../images/my-photo.png';
+import MyPhoto from '../../images/My-photo.jpeg';
 import Rings from '../../images/rings.svg';
 
 const Hero: React.FC = () => {
