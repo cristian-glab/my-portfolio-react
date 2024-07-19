@@ -1,9 +1,19 @@
+.react-tabs__tab--selected {
+	border-radius: 0;
+}
+
+.react-tabs__tab:focus:after {
+	background-color: var(--dt-decoration);
+}
+
+
 .projects {
 	padding: 2vw 6vw 0 6vw;
 	.title {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		margin-bottom: 2rem;
 		h1 {
 			font-size: 5.5vw;
 		}
@@ -120,6 +130,7 @@
 						cursor: pointer;
 						&:hover {
 							color: var(--dt-decoration);
+							border-bottom: 1px solid var(--dt-text);
 						}
 					}
 				}

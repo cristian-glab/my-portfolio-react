@@ -6,7 +6,6 @@
 		position: absolute;
 		top: 7rem;
 		left: -7rem;
-		animation: toRight .7s ease-in-out 0s;
 	}
 	.container {
 		height: 45rem;
@@ -62,7 +61,7 @@
 				top: 10rem;
 				width: 100%;
 				h1 {
-					animation: appearing 1s ease-in-out 0s;
+					animation: appearing 2s ease-in-out 0s;
 					text-shadow: 1px 1px 10px black;
 					font-size: 6.5vw;
 					width: 70%;
@@ -109,7 +108,7 @@
 				position: absolute;
 				display: flex;
 				justify-content: flex-end;
-				animation: imageHero 1.5s ease-in-out 0s;
+				animation: imageHero 1.2s ease-in-out 0s;
 				img {
 					width: 70%;
 				}
@@ -239,6 +238,10 @@
 
 @keyframes appearing {
 	0% {
+		opacity: 0;
+	}
+
+	50% {
 		opacity: 0;
 	}
 
