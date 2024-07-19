@@ -61,7 +61,8 @@ const Contact: React.FC = () => {
       })
       .catch((error) => {
         setIsSuccess(false);
-        setModalContent(`Email failed to send: ${error}`);
+        console.log('error', error)
+        setModalContent(`Email failed to send: ${error.text}`) ;
       })
       .finally(() => {
         setIsModalOpen(true);
@@ -147,7 +148,7 @@ const Contact: React.FC = () => {
         } isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}
       >
-        <h2>Message</h2>
+        <h2 className='modal-title'>Message</h2>
         <p>{modalContent}</p>
         <button onClick={() => setIsModalOpen(false)}>Close</button>
       </Modal>
