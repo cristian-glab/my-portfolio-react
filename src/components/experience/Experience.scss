@@ -123,6 +123,7 @@
 .techs {
   padding: .5rem 0;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   text-transform: uppercase;
